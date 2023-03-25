@@ -1,0 +1,88 @@
+{
+    "type": "database",
+    "name": "homework_5",
+    "objects": [
+        {
+            "type": "table",
+            "database": null,
+            "name": "students",
+            "withoutRowId": false,
+            "strict": false,
+            "ddl": "CREATE TABLE students (id INTEGER PRIMARY KEY ON CONFLICT ABORT AUTOINCREMENT, first_name TEXT NOT NULL, second_name TEXT NOT NULL, address NOT NULL)",
+            "columns": [
+                {
+                    "name": "id",
+                    "type": "INTEGER",
+                    "constraints": [
+                        {
+                            "type": "PRIMARY KEY",
+                            "definition": "PRIMARY KEY ON CONFLICT ABORT AUTOINCREMENT"
+                        }
+                    ]
+                },
+                {
+                    "name": "first_name",
+                    "type": "TEXT",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "second_name",
+                    "type": "TEXT",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                },
+                {
+                    "name": "address",
+                    "type": "",
+                    "constraints": [
+                        {
+                            "type": "NOT NULL",
+                            "definition": "NOT NULL"
+                        }
+                    ]
+                }
+            ],
+            "rows": [
+                [
+                    1,
+                    "Андрей",
+                    "Трезвый",
+                    "Большой.ул. Длинная д.32"
+                ],
+                [
+                    2,
+                    "Анюта",
+                    "Смелая",
+                    "пос. Маленький пр. Двух домов д.1"
+                ],
+                [
+                    3,
+                    "Игорь",
+                    "Пельмень",
+                    "г. Уральск ул.Тихая д.10 кв.5"
+                ],
+                [
+                    4,
+                    "Павел",
+                    "Грустный",
+                    "д. Далёкая пер. Зайцев д.1"
+                ],
+                [
+                    5,
+                    "Раиса",
+                    "Грамотная",
+                    "х. Умников бул. Капуцинов д.64"
+                ]
+            ]
+        }
+    ]
+}
